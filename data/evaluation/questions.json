@@ -1,0 +1,243 @@
+[
+  {
+    "id": "q001",
+    "question": "What are the four functions of the AI Risk Management Framework?",
+    "expected_answer": "The four functions are GOVERN, MAP, MEASURE, and MANAGE.",
+    "source": "01_ai_rmf.pdf",
+    "page": 25
+  },
+  {
+    "id": "q002",
+    "question": "What is the role of the GOVERN function in the AI RMF?",
+    "expected_answer": "GOVERN is a cross-cutting function that establishes policies, processes, roles, responsibilities, and organizational practices for managing AI risks and enables the other AI RMF functions.",
+    "source": "01_ai_rmf.pdf",
+    "page": 21
+  },
+  {
+    "id": "q003",
+    "question": "What does the MAP function help organizations understand?",
+    "expected_answer": "MAP helps organizations establish context, characterize the AI system, understand its capabilities and intended use, and identify and characterize its potential risks, impacts, benefits, and costs.",
+    "source": "01_ai_rmf.pdf",
+    "page": 26
+  },
+  {
+    "id": "q004",
+    "question": "What is the main purpose of the MEASURE function?",
+    "expected_answer": "MEASURE uses quantitative, qualitative, or mixed-method approaches to analyze, assess, benchmark, and monitor AI risks and related impacts and provides information to the MANAGE function.",
+    "source": "01_ai_rmf.pdf",
+    "page": 28
+  },
+  {
+    "id": "q005",
+    "question": "How does the MANAGE function prioritize AI risks?",
+    "expected_answer": "MANAGE prioritizes documented AI risks based on factors such as impact, likelihood, and available resources or methods, and develops appropriate responses.",
+    "source": "01_ai_rmf.pdf",
+    "page": 31
+  },
+  {
+    "id": "q006",
+    "question": "What is the difference between a Current Profile and a Target Profile in the AI RMF?",
+    "expected_answer": "A Current Profile describes how AI risks are currently being managed and the current outcomes, while a Target Profile describes the desired outcomes needed to achieve the organization's AI risk management goals.",
+    "source": "01_ai_rmf.pdf",
+    "page": 33
+  },
+
+
+
+
+  {
+    "id": "q007",
+    "question": "What is the purpose of the AI RMF Generative AI Profile?",
+    "expected_answer": "It is a cross-sectoral profile of the AI RMF that helps organizations manage risks associated with generative AI across different stages of the AI lifecycle.",
+    "source": "02_generative_ai_profile.pdf",
+    "page": 5
+  },
+  {
+    "id": "q008",
+    "question": "What four primary considerations guided the Generative AI Public Working Group's work?",
+    "expected_answer": "The four primary considerations were Governance, Content Provenance, Pre-deployment Testing, and Incident Disclosure.",
+    "source": "02_generative_ai_profile.pdf",
+    "page": 6
+  },
+  {
+    "id": "q009",
+    "question": "How does the Generative AI Profile define confabulation?",
+    "expected_answer": "Confabulation is the production of confidently stated but erroneous or false content that may mislead or deceive users.",
+    "source": "02_generative_ai_profile.pdf",
+    "page": 8
+  },
+  {
+    "id": "q010",
+    "question": "What is the data privacy risk associated with generative AI?",
+    "expected_answer": "Data privacy risk includes leakage, unauthorized use or disclosure, and de-anonymization of biometric, health, location, personally identifiable, or other sensitive information.",
+    "source": "02_generative_ai_profile.pdf",
+    "page": 8
+  },
+  {
+    "id": "q011",
+    "question": "What is meant by harmful bias or homogenization in generative AI?",
+    "expected_answer": "It includes amplification of historical, societal, and systemic biases, performance disparities between groups or languages, discrimination, and undesirable homogeneity that can produce erroneous or harmful outputs.",
+    "source": "02_generative_ai_profile.pdf",
+    "page": 8
+  },
+  {
+    "id": "q012",
+    "question": "Why can GAI risks be difficult to estimate?",
+    "expected_answer": "Some GAI risks are unknown or difficult to estimate because of the scale and complexity of GAI systems, the wide range of stakeholders, uses, inputs and outputs, limited visibility into training data, and the immature state of AI measurement and safety science.",
+    "source": "02_generative_ai_profile.pdf",
+    "page": 7
+  },
+
+
+
+
+
+
+
+
+  {
+    "id": "q013",
+    "question": "What are the three major attacker goals identified for predictive AI systems?",
+    "expected_answer": "The three major goals are availability violation or breakdown, integrity violation, and privacy compromise.",
+    "source": "03_adversarial_ml_taxonomy.pdf",
+    "page": 4
+  },
+  {
+    "id": "q014",
+    "question": "What is an evasion attack in adversarial machine learning?",
+    "expected_answer": "An evasion attack attempts to generate adversarial examples that cause a machine learning model to classify an input as an attacker-selected class, often using only a small perturbation.",
+    "source": "03_adversarial_ml_taxonomy.pdf",
+    "page": 10
+  },
+  {
+    "id": "q015",
+    "question": "What is a poisoning attack?",
+    "expected_answer": "A poisoning attack interferes with a machine learning model during its training stage, such as by inserting malicious training data or modifying the training process.",
+    "source": "03_adversarial_ml_taxonomy.pdf",
+    "page": 5
+  },
+  {
+    "id": "q016",
+    "question": "What is the difference between a white-box attack and a black-box attack?",
+    "expected_answer": "A white-box attack assumes the attacker has full knowledge of the ML system, including training data, architecture, and hyperparameters, while a black-box attack operates with limited knowledge and may rely on query access to the model.",
+    "source": "03_adversarial_ml_taxonomy.pdf",
+    "page": 8
+  },
+  {
+    "id": "q017",
+    "question": "What is model extraction?",
+    "expected_answer": "Model extraction is a privacy attack in which an attacker attempts to extract information about the machine learning model, such as its architecture or parameters.",
+    "source": "03_adversarial_ml_taxonomy.pdf",
+    "page": 7
+  },
+  {
+    "id": "q018",
+    "question": "What are three mitigation approaches discussed for adversarial evasion attacks?",
+    "expected_answer": "Three major mitigation approaches are adversarial training, randomized smoothing, and formal verification.",
+    "source": "03_adversarial_ml_taxonomy.pdf",
+    "page": 17
+  },
+
+
+
+
+
+
+
+
+
+  {
+    "id": "q019",
+    "question": "What is synthetic content according to the NIST report?",
+    "expected_answer": "Synthetic content refers to information such as images, videos, audio clips, and text that has been significantly altered or generated by algorithms, including AI.",
+    "source": "04_synthetic_content.pdf",
+    "page": 1
+  },
+  {
+    "id": "q020",
+    "question": "What is digital content transparency?",
+    "expected_answer": "Digital content transparency is the process of documenting and accessing information about the origins and history of digital content.",
+    "source": "04_synthetic_content.pdf",
+    "page": 1
+  },
+  {
+    "id": "q021",
+    "question": "What are the two main current methods for provenance data tracking?",
+    "expected_answer": "The two main methods are digital watermarking and metadata recording.",
+    "source": "04_synthetic_content.pdf",
+    "page": 5
+  },
+  {
+    "id": "q022",
+    "question": "What is the purpose of digital watermarking?",
+    "expected_answer": "Digital watermarking embeds information into content such as images, text, audio, or video to help verify authenticity or characteristics of the content's provenance, modifications, or conveyance.",
+    "source": "04_synthetic_content.pdf",
+    "page": 5
+  },
+  {
+    "id": "q023",
+    "question": "Why does digital content transparency not guarantee trustworthiness?",
+    "expected_answer": "Transparency provides information about content origins and history but does not guarantee that the content itself is trustworthy because authentic content can still be misleading or harmful and technical transparency measures can sometimes create a false sense of trust.",
+    "source": "04_synthetic_content.pdf",
+    "page": 2
+  },
+  {
+    "id": "q024",
+    "question": "What factors are considered when evaluating digital watermarking techniques?",
+    "expected_answer": "Watermarking can be evaluated based on detection accuracy, robustness and security against modifications and attacks, and the distortion or quality loss introduced by the watermark.",
+    "source": "04_synthetic_content.pdf",
+    "page": 33
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "q025",
+    "question": "What is the purpose of the AI RMF Playbook?",
+    "expected_answer": "The Playbook provides suggested actions for achieving the outcomes described in the AI RMF Core and aligns those suggestions with subcategories within the Govern, Map, Measure, and Manage functions.",
+    "source": "05_ai_rmf_playbook.pdf",
+    "page": 4
+  },
+  {
+    "id": "q026",
+    "question": "Is the AI RMF Playbook a mandatory checklist that organizations must follow?",
+    "expected_answer": "No. The Playbook is neither a checklist nor a complete set of steps, and its suggestions are voluntary.",
+    "source": "05_ai_rmf_playbook.pdf",
+    "page": 4
+  },
+  {
+    "id": "q027",
+    "question": "What does GOVERN 1.1 of the AI RMF Playbook address?",
+    "expected_answer": "GOVERN 1.1 addresses understanding, managing, and documenting legal and regulatory requirements involving AI.",
+    "source": "05_ai_rmf_playbook.pdf",
+    "page": 6
+  },
+  {
+    "id": "q028",
+    "question": "Why is documenting the business context of an AI system important according to MAP 1.4?",
+    "expected_answer": "Documenting the business context helps organizations understand how technical decisions interact with the system's purpose, organizational mission, values, and social context so that associated socio-technical risks can be identified and managed.",
+    "source": "05_ai_rmf_playbook.pdf",
+    "page": 66
+  },
+  {
+    "id": "q029",
+    "question": "What does MEASURE 1.1 recommend regarding AI risk metrics?",
+    "expected_answer": "It recommends selecting approaches and metrics for the risks identified during MAP, starting with the most significant risks, and documenting risks or trustworthiness characteristics that cannot be measured.",
+    "source": "05_ai_rmf_playbook.pdf",
+    "page": 93
+  },
+  {
+    "id": "q030",
+    "question": "What factors should be considered when prioritizing AI risk treatment under MANAGE 1.2?",
+    "expected_answer": "AI risk treatment should be prioritized based on factors such as impact, likelihood, and available resources or methods.",
+    "source": "05_ai_rmf_playbook.pdf",
+    "page": 36
+  }
+]
