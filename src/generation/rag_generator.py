@@ -18,6 +18,7 @@ Keep the answer clear and concise.
 def generate_answer(
     query: str,
     retrieved_documents,
+    chat_history: list[dict[str, str]] | None = None,
 ) -> str:
     """
     Generate an answer using the retrieved documents as context.
@@ -39,8 +40,16 @@ def generate_answer(
 
     context = "\n\n---\n\n".join(context_parts)#Join all the chunks
 
+    history = "\n".join(
+        f"{message['role'].capitalize()}: {message['content']}"
+        for message in (chat_history or [])
+    )
+
     prompt = f"""
 {SYSTEM_PROMPT}
+
+RECENT CONVERSATION (for resolving follow-up references only):
+{history or "No previous conversation."}
 
 CONTEXT:
 {context} #Add the retrieved context

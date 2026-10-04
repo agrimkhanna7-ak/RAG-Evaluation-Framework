@@ -9,7 +9,7 @@ from src.vectorstore.chroma_store import (
 )#Import our embedding adapter and collection name
 
 
-PERSIST_DIRECTORY = Path("data/vectorstore")#Our existing Chroma database is located here.
+PERSIST_DIRECTORY = Path(__file__).resolve().parents[2] / "data" / "vectorstore"
 
 
 # Load the embedding function once

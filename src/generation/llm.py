@@ -20,7 +20,7 @@ def create_llm() -> ChatGoogleGenerativeAI:
         )
 
     llm = ChatGoogleGenerativeAI(
-        model="gemini-3.6-flash",
+        model=os.getenv("GEMINI_MODEL", "gemini-3.6-flash"),
         google_api_key=api_key,
         #temperature=0,#For our RAG evaluation project, we want the model to be as consistent/deterministic as practical
     )

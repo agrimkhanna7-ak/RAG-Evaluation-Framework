@@ -3,7 +3,8 @@ from pypdf import PdfReader
 from langchain_core.documents import Document
 
 
-DOCUMENTS_DIR = Path("data/documents")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DOCUMENTS_DIR = PROJECT_ROOT / "data" / "documents"
 
 
 def load_pdf(file_path: Path) -> list[Document]:

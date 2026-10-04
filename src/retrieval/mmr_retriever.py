@@ -9,7 +9,7 @@ from src.vectorstore.chroma_store import (
 )
 
 
-PERSIST_DIRECTORY = Path("data/vectorstore")
+PERSIST_DIRECTORY = Path(__file__).resolve().parents[2] / "data" / "vectorstore"
 
 
 # Load the embedding function once.

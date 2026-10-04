@@ -1,11 +1,13 @@
 from pathlib import Path
+
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 
-from src.embeddings.embedding_model import create_embedding_model
+from src.embeddings.embedding_model import EMBEDDING_MODEL, create_embedding_model
 
 
-PERSIST_DIRECTORY = Path("data/vectorstore") #Store the Chroma database inside data/vectorstore.
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PERSIST_DIRECTORY = PROJECT_ROOT / "data" / "vectorstore"
 COLLECTION_NAME = "rag_documents" #A collection is basically a group of related vectors/documents inside Chroma.
 
 
@@ -65,6 +67,27 @@ def create_vectorstore( #This function creates our actual Chroma database.
         collection_name=COLLECTION_NAME, #Store them in the rag_documents collection
         persist_directory=str(PERSIST_DIRECTORY), #Save the vector database to data/vectorstore.
     )
+
+    return vectorstore
+
+
+def ensure_vectorstore(documents: list[Document]) -> Chroma:
+    """Load the persistent index, building it once when it is empty."""
+    if not documents:
+        raise ValueError(
+            f"No readable PDF pages found in {PROJECT_ROOT / 'data' / 'documents'}."
+        )
+
+    vectorstore = Chroma(
+        collection_name=COLLECTION_NAME,
+        persist_directory=str(PERSIST_DIRECTORY),
+        embedding_function=LocalEmbeddingFunction(EMBEDDING_MODEL),
+    )
+    if vectorstore._collection.count() == 0:
+        vectorstore = create_vectorstore(
+            documents=documents,
+            embedding_model_name=EMBEDDING_MODEL,
+        )
 
     return vectorstore
     
